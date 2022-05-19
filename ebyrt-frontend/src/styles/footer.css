@@ -1,0 +1,25 @@
+footer {
+  background-color: #1a1a1a;
+  bottom: 0;
+  position: fixed;
+  width: 100%;
+}
+
+p {
+  color: #c4c4c4;
+}
+
+a {
+  color: #c4c4c4;
+  text-decoration: none;
+  transition: 0.4s ease; 
+}
+
+a:hover {
+  color: #7cb342;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: center;
+}
