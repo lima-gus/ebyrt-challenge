@@ -1,9 +1,9 @@
 const { Task } = require('../models');
 
 const create = async (task) => {
-  const addTask = await Task.create(task);
+  const { dataValues } = await Task.create(task);
 
-  return addTask;
+  return dataValues;
 }
 
 const findAll = async () => {
