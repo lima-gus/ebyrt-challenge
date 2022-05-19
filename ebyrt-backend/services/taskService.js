@@ -6,4 +6,10 @@ const create = async (task) => {
   return addTask;
 }
 
-module.exports = { create };
+const findAll = async () => {
+  const tasks = await Task.findAll();
+
+  return tasks;
+}
+
+module.exports = { create, findAll };
