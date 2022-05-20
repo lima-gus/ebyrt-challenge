@@ -12,4 +12,8 @@ const findAll = async () => {
   return tasks;
 }
 
-module.exports = { create, findAll };
+const remove = async (id) => {
+  await Task.destroy({ where: { id } })
+}
+
+module.exports = { create, findAll, remove };
