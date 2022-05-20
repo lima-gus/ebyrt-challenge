@@ -1,4 +1,4 @@
-# ebyrt-challenge [40%]
+# ebyrt-challenge [60%]
 
 ## Descrição
 
@@ -7,7 +7,7 @@ Esse projeto foi desenvolvido individualmente para o teste técnico da Ebyrt. O 
 ## Funcionalidades
  - [x]  Visualizar a lista de tarefas;
  - [x] Inserir uma tarefa na lista;
- - [ ] Remover uma tarefa da lista;
+ - [x] Remover uma tarefa da lista;
  - [ ] Atualizar uma tarefa da lista;
  - [ ] A tarefa deve ter um status atualizável: Pendente, Em Andamento ou Concluído;
 
@@ -34,4 +34,5 @@ MYSQL_HOST=localhost
 ##
 ### ⚠️ Observação 
 * O front-end está hard coded e ainda não há integração com o back-end;
-* Utilizando o [Insomnia](https://insomnia.rest/download) ou [Postman](https://www.postman.com/downloads/) é possível fazer a requisição para as rotas `post` e `get` na URL `http://localhost:3001/task`
+* Utilizando o [Insomnia](https://insomnia.rest/download) ou [Postman](https://www.postman.com/downloads/) é possível fazer a requisição para as rotas `post` e `get` na URL `http://localhost:3001/task`;
+* É possível fazer a requisição para a rota `delete` na URL `http://localhost:3001/task/:id` onde `:id` deve ser substituído pelo id da tarefa;
