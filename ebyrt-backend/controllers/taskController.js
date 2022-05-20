@@ -21,4 +21,15 @@ const findAll = async (_req, res, next) => {
   }
 };
 
-module.exports = { create, findAll };
+const remove = async (req, res, next) => {
+  try {
+    const { id } = req.params;
+    await taskService.remove(id);
+
+    return res.status(204).json({ id });
+  } catch (e) {
+    next(e);
+  }
+}
+
+module.exports = { create, findAll, remove };
