@@ -30,9 +30,19 @@ MYSQL_HOST=localhost
  4.   Execute  `npm start` dentro das pastas `ebyrt-frontend` e `ebyrt-backend` para iniciar a aplicação;
  
  *O front-end está configurado para rodar na porta 3000 e o back-end na porta 3001, certifique-se que essas portas estão livres;*
+ 
+* Utilizando o [Insomnia](https://insomnia.rest/download) ou [Postman](https://www.postman.com/downloads/) é possível fazer a requisição para as rotas `post` e `get` na URL `http://localhost:3001/task`;
 
+*Na rota `post` é necessário enviar um JSON no seguinte formato:*
+
+```
+{
+ "task": "Platinar The Witcher 3"
+}
+```
+
+* É possível fazer a requisição para a rota `delete` na URL `http://localhost:3001/task/:id` onde `:id` deve ser substituído pelo id da tarefa;
 ##
 ### ⚠️ Observação 
 * O front-end está hard coded e ainda não há integração com o back-end;
-* Utilizando o [Insomnia](https://insomnia.rest/download) ou [Postman](https://www.postman.com/downloads/) é possível fazer a requisição para as rotas `post` e `get` na URL `http://localhost:3001/task`;
-* É possível fazer a requisição para a rota `delete` na URL `http://localhost:3001/task/:id` onde `:id` deve ser substituído pelo id da tarefa;
+
